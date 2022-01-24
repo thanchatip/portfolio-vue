@@ -1,9 +1,9 @@
 * {
-    font-family: 'Roboto Mono', monospace;   
+    font-family: 'Outfit', sans-serif;  
 }
 
 body, html {
-    /*background: #cfcad1;*/
+    background: #cfcad1;
     height: 100%;
     /* pallete swatches
         #1c2729 black
@@ -44,7 +44,7 @@ body, html {
 .home .hero {
     position: relative;
     width: 100vw;
-    height: 50vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
