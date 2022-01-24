@@ -1,13 +1,28 @@
 <template>
-  <div class="home">
 
-    <h1 class="display-1">Header</h1>
+  <div class="home">
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">Hello, I'm Thanchatip</h1>
+        <h2 class="hero-subtitle">Software Developer</h2>
+        <button type="button" class="hero-button" @click="contactMe">
+          Contact me &raquo;
+        </button>
+      </div>
+    </section>
+    <h1 class="display-1">Home</h1>
   </div>
+  
 </template>
 
 <script>
 export default {
-  name: 'Home',
+  methods: {
+    contactMe () {
+      this.$router.push({name: 'Contact'})
+    }
+  },
+
 }
 </script>
 
