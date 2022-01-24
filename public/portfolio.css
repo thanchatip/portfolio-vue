@@ -1,0 +1,15 @@
+* {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    
+}
+
+#app {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50; 
+}
+
+.home {
+    color: rgb(209, 63, 63);
+    margin-left: 20px;  
+}
