@@ -1,30 +1,42 @@
 * {
-    font-family: 'Outfit', sans-serif;  
+    font-family: 'Outfit', sans-serif;
+    box-sizing: border-box;
 }
-
-body, html {
-    background: #cfcad1;
-    height: 100%;
-    /* pallete swatches
+/* 
+    pallete swatches
         #1c2729 black
         #3c6da7 teal
         #9d90be taro
         #d7d4f1 grey
         #2f2d3b black
         #5e4d9b dark veri peri
+        #6f70ac ligth veri peri
         #9389bd purple
         #6768ab veri peri
         #cfcad1 grey
     */
+
+body, html {
+    background: lightgray;
+    height: 100%;
 }
 
 #app {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.home, .profile, .contact, .project h1 {
+.home, .about-me, .contact, .project h1 {
     margin: 20px;
     font-style: bold;
+    color: #1c2729;
+    
+}
+.half-background { 
+    background: linear-gradient(to top, #9d90be 50%, transparent 50%);
+}
+
+.display-4 .half-background, .display-6 .half-background{ 
+    background: linear-gradient(to top, #6f70ac 35%, transparent 35%);
 }
 
 .navbar {
@@ -42,13 +54,14 @@ body, html {
 }
 
 .home .hero {
-    position: relative;
+    position: fixed;
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .home .hero::before {
     content: "";
     position: absolute;
@@ -69,16 +82,19 @@ body, html {
     text-align: center;
     margin: 0.625rem;
 }
+
 .hero-title {
     font-size: 3rem;
     font-weight: 600;
     margin-bottom: 0;
 }
+
 .hero-subtitle {
     font-size: 2rem;
     font-weight: 200;
     margin-top: 1rem;
 }
+
 .hero-button {
     background-color: #1c2729;
     color: white;
@@ -90,7 +106,129 @@ body, html {
     cursor: pointer;
     border-radius: 40px;
 }
+
 .hero-button:hover {
     background-color: #5e4d9b;
     border: 1px solid #5e4d9b;
+}
+
+/* Container for flexboxes */
+.row {
+  display: -webkit-flex;
+  display: flex;
+  margin: 10px;
+  gap: 10px;
+}
+
+.column {
+  padding: 1em;
+  height: auto; /* Should be removed. Only for demonstration */
+}
+
+/* Left and right column */
+.column.side {
+   -webkit-flex: 1;
+   -ms-flex: 1;
+   flex: 1;
+   border: 5px solid #9d90be;
+   border-radius: 20px;
+}
+/* Middle column */
+.column.middle {
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+  border: 5px solid #9d90be;
+  border-radius: 20px;
+}
+
+.footer {
+    padding: 10px;
+    margin: 10px;
+    border: 5px solid #9d90be;
+    border-radius: 20px;
+}
+
+.detail {
+  width: auto;
+  height: auto;
+  columns: 2;
+  column-fill: balance;
+  background-color: #9d90be;
+}
+
+.detail h4 {
+  break-after: column;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .row {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+/* contact page */
+
+.social-icons {
+  text-align: center;
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 1.5em;
+  color: #222222;
+}
+
+.social-icons ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.social-icons ul li {
+  display: inline-block;
+  zoom: 1;
+  width: 65px;
+  vertical-align: middle;
+  border: 1px solid #2f2d3b;
+  border-radius: 360px;
+  font-size: 15px;
+  height: 40px;
+  line-height: 40px;
+  margin-right: 5px;
+  background: #ffffff;
+}
+
+.social-icons ul li a {
+  display: block;
+  font-size: 1.4em;
+  margin: 0 5px;
+  text-decoration: none;
+}
+.social-icons ul li a i {
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.social-icons ul li a:focus i,
+.social-icons ul li a:active i {
+  transition: none;
+  color: #222222;
+}
+
+.box {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+.box div {
+  width: 50%;
+  height: 50%;
 }

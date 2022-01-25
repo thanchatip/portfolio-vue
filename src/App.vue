@@ -13,7 +13,7 @@
             <router-link class="nav-link" aria-current="page" to="/">Home</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" :to="{name:'Profile'}">Profile</router-link>
+            <router-link class="nav-link" :to="{name:'About'}">About me</router-link>
           </li>
           <li class="nav-item">
             <router-link class="nav-link" :to="{name:'Project'}">Projects</router-link>

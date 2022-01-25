@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import Home from '../components/Home.vue'
-import Profile from '../components/Profile.vue'
-import Contact from '../components/Contact.vue'
-import Project from '../components/Project.vue'
+import Home from '../views/Home.vue'
+import About from '../views/About.vue'
+import Contact from '../views/Contact.vue'
+import Project from '../views/Project.vue'
 
 Vue.use(VueRouter)
 
@@ -15,9 +15,9 @@ const routes = [
         component: Home
     },
     {
-        path: '/profile',
-        name: 'Profile',
-        component: Profile
+        path: '/about-me',
+        name: 'About',
+        component: About
     },
     {
         path: '/contact',
