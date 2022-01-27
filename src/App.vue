@@ -13,11 +13,26 @@
             <router-link class="nav-link" aria-current="page" to="/">Home</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" :to="{name:'About'}">About me</router-link>
+            <router-link class="nav-link" :to="{name:'About'}">About</router-link>
           </li>
-          <li class="nav-item">
-            <router-link class="nav-link" :to="{name:'Project'}">Projects</router-link>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Works
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li>
+                <a class="dropdown-item" href="#">
+                  <router-link class="dropdown-item" :to="{ name: 'Experience' }">Experiences</router-link>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <router-link class="dropdown-item" :to="{ name: 'Project' }">Projects</router-link>
+                </a>
+              </li>
+            </ul>
           </li>
+
           </div>
 
           <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
@@ -26,8 +41,7 @@
                 <router-link class="nav-link" aria-current="page" :to="{name:'Contact'}">Contact</router-link>
               </li>
             </div>
-          </div>
-        
+          </div>  
       </div>
     </div>
     </nav>
