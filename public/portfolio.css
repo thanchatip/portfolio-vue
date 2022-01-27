@@ -1,5 +1,5 @@
 * {
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Outfit','IBM Plex Sans Thai', sans-serif;
     box-sizing: border-box;
 }
 /* 
@@ -93,14 +93,14 @@ body, html {
 }
 
 .detail {
-  width: auto;
+  width: 70vw;
   height: auto;
   columns: 2;
   column-fill: balance;
 }
 
 .detail h4 {
-  break-after: column;
+  break-after: row;
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
