@@ -2,24 +2,24 @@
   <div class="education">
     <div class="content">
         <h1 class="display-1"><span class="half-background">Education .</span></h1>
-        <div class="row">
+        <div class="block">
           <div class="items">
-            <h5>December 2019</h5>
+            <h5><i><span class="half-background">Bachelor's Degree</span></i></h5>
+            <p>December 2019</p>
             <h4>Prince of Songkla University</h4>
-            <h4>Bachelor of Engineering</h4>
-            <h5>Computer Engineering</h5>
+            <p>Bachelor of Engineering<br>Computer Engineering</p>
           </div>
           <div class="items">
-            <h5>December 20xx</h5>
+            <h5><i><span class="half-background">High School</span></i></h5>
+            <p>Febuary 2015</p>
             <h4>Saparachinee Trang School</h4>
-            <h4>High School</h4>
-            <h5>Science - Math (SMTE) program </h5>
+            <p>Science - Math (SMTE) program </p>
           </div>
           <div class="items">
-            <h5>December 20xx</h5>
+            <h5><i><span class="half-background">Junior High School</span></i></h5>
+            <p>Febuary 2012</p>
             <h4>Horwang School</h4>
-            <h4>Junior High School</h4>
-            <h5>Intensive program </h5>
+            <p>Intensive English program </p><br>
           </div>
         </div>
 
@@ -60,12 +60,15 @@ export default {
 }
 .items {
   padding: 2em;
-  background-color: rgba(32, 178, 171, 0.911);
+  background-color: rgba(232, 235, 234);
+  border: 5px solid rgb(33, 104, 24) ;
   border-radius: 50px;
   margin: 1em;
   -webkit-flex: 1;
    -ms-flex: 1;
    flex: 1;
+   width: 25vw; height: auto;
+
 }
 
 .education .content{
@@ -75,5 +78,8 @@ export default {
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
+}
+.items .half-background { 
+    background: linear-gradient(to top, #a2be90 50%, transparent 50%);
 }
 </style>
